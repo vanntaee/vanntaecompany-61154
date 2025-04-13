@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanntae | Belleza en lo natural</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gris-suave: #e3e3e3;
+      --gris: #c0c0c0;
+      --gris-medio: #9a9a9a;
+      --gris-oscuro: #444;
+      --negro-suave: #222;
+      --blanco: #f9f9f9;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Alice', serif;
+      background-color: var(--gris-suave);
+      color: var(--gris-oscuro);
+      opacity: 0;
+      animation: fadeIn 2.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),
+                  url('https://lucahairstyling.co.nz/cdn/shop/products/SignatureShampoo1.jpg?v=1668649719&width=600') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: var(--gris);
+    }
+
+    .header-content h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    .header-content p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: var(--gris);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .product {
+      background-color: var(--blanco);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom: 60px;
+    }
+
+    .product h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .ingredients {
+      background-color: var(--gris);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      color: var(--negro-suave);
+    }
+
+    .philosophy {
+      background-color: var(--blanco);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      margin-bottom: 60px;
+    }
+
+    .philosophy h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .philosophy p {
+      font-size: 1.05em;
+      color: var(--gris-oscuro);
+      line-height: 1.7;
+    }
+
+    .inspo-image {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .inspo-image img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .contact h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: var(--gris-oscuro);
+      font-size: 1.5em;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: var(--negro-suave);
+    }
+
+    .contact-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--gris-medio);
+      color: var(--blanco);
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-size: 0.9em;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      font-family: 'Alice', serif;
+      transition: background-color 0.3s ease;
+      z-index: 100;
+    }
+
+    .contact-button:hover {
+      background-color: var(--gris-oscuro);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: var(--gris-medio);
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Vanntae</h1>
+      <p>buscamos belleza en lo natural</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="philosophy">
+      <h2>Nuestra Esencia</h2>
+      <p>
+        En Vanntae creemos que la belleza auténtica se encuentra en lo sencillo y ancestral. Recuperamos fórmulas tradicionales para crear productos que no solo cuidan de ti, sino que también narran una historia: la de la naturaleza, la calma y el equilibrio.
+        Cada jabón es una declaración de intenciones: volver al origen, abrazar lo natural y embellecer desde la honestidad.
+        Inspirados por atmósferas suaves y melodías que susurran elegancia, ofrecemos más que cuidado: ofrecemos rituales.
+      </p>
+    </section>
+
+    <!-- Imagen inspiracional -->
+    <div class="inspo-image">
+      <img src="https://hadanature-rmc.jp/wp-content/uploads/2019/10/%E6%B3%A1.jpg" alt="Inspiración natural">
+    </div>
+
+    <section class="product">
+      <h2>Jabón artesanal para manos</h2>
+      <p>Una sinfonía de pureza y elegancia gris: sosa, manteca de cerdo, esencia de nuez y extracto de avena. Sutil, natural y eterno.</p>
+      <div class="ingredients">
+        <strong>Ingredientes:</strong><br>
+        · Agua destilada<br>
+        · Sosa cáustica (hidroxido de sodio)<br>
+        · Manteca de cerdo<br>
+        · Extracto de avena<br>
+        · Esencia de nuez
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h3>Contacto</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com/vanntaecompany" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/vanntaecompany" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/vanntaecompany" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:vanntaecompany@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <button class="contact-button" onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })">
+    ¡Contáctanos!
+  </button>
+
+  <footer>
+    Vanntae | hecho a mano con calma y convicción<br>
+    © 2025 Todos los derechos reservados
+  </footer>
+</body>
+</html>
